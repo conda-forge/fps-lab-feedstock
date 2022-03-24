@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
@@ -21,20 +21,20 @@ requirements:
   run:
     - python >=3.7
     - fps >=0.0.8
-    - fps-auth
-    - aiofiles
-    - babel
-    - json5
+    - fps-auth >=0.0.30,<1.0.0
+    - aiofiles <1.0.0
+    - babel <3.0.0
+    - json5 <1.0.0
 
 test:
   imports:
     - fps_lab
 
 about:
-  home: https://github.com/jupyter-server/jupyverse/plugins/lab
+  home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
   summary: An FPS plugin for the JupyterLab/RetroLab API
   keywords: jupyter, server, fastapi, pluggy, plugins
-  dev_url: https://github.com/jupyter-server/jupyverse/plugins/lab
+  dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
   license_file: COPYING.md
   license: BSD-3-Clause
   license_family: BSD
