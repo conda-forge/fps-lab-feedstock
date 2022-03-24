@@ -1,7 +1,7 @@
 About fps-lab
 =============
 
-Home: https://github.com/jupyter-server/jupyverse/plugins/lab
+Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-lab-feedsto
 
 Summary: An FPS plugin for the JupyterLab/RetroLab API
 
-Development: https://github.com/jupyter-server/jupyverse/plugins/lab
+Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
 
 Current build status
 ====================
