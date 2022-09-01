@@ -20,8 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - fps <1
-    - fps-auth <1
+    - fps >=0.0.19,<1
     - aiofiles <1
     - babel >=2,<3
     - json5 <1
