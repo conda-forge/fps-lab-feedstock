@@ -1,5 +1,5 @@
 {% set name = "fps-lab" %}
-{% set version = "0.0.40" %}
+{% set version = "0.0.41" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_lab-{{ version }}.tar.gz
-  sha256: be17d1d2492812e5b4bce1e94b895980d6cdc168217967042865020c16df15f2
+  sha256: 3eeb7f451997eb3763fdf65e8dce7a197b8f8c959d9a4fa221053480559a7eb9
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
   run:
     - python >=3.7
     - fps >=0.0.8,<1
+    - fps-frontend <1
     - aiofiles <1
     - babel >=2,<3
     - json5 <1
