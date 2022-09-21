@@ -1,5 +1,5 @@
 {% set name = "fps-lab" %}
-{% set version = "0.0.41" %}
+{% set version = "0.0.42" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_lab-{{ version }}.tar.gz
-  sha256: 3eeb7f451997eb3763fdf65e8dce7a197b8f8c959d9a4fa221053480559a7eb9
+  sha256: bb1a215f4861be3e73d74bf58d7888ddeec8c341930c0c0de9e64514824737f7
 
 build:
   noarch: python
