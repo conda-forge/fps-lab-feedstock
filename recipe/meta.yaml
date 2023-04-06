@@ -32,7 +32,7 @@ test:
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
   summary: An FPS plugin for the JupyterLab/RetroLab API
-  keywords: jupyter, server, fastapi, pluggy, plugins
+  keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
   license_file: COPYING.md
   license: BSD-3-Clause
