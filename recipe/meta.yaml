@@ -24,6 +24,7 @@ requirements:
     - jupyverse-api >=0.1.4,<1
     - babel
     - json5
+    - importlib_metadata >=4.4
 
 test:
   imports:
