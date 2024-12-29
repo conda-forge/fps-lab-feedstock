@@ -6,27 +6,29 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_lab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_lab-{{ version }}.tar.gz
   sha256: 35c5fd6007c4a1913754dd47ade4febb10c657cb3d021d4b92859c2533d013b8
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - jupyverse-api >=0.1.4,<1
     - babel
     - json5
     - importlib_metadata >=4.4
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - fps_lab
 
