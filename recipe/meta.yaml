@@ -1,5 +1,5 @@
 {% set name = "fps-lab" %}
-{% set version = "0.8.2" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_lab-{{ version }}.tar.gz
-  sha256: c6605aab5c1f48d580bea94ef304b038b3d63c1b4f3ee069203d809063a7fc5d
+  sha256: 929021cec6155926b4ed9238d66c82c384cb314fd1fe4a0fcaecf796789839cd
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.9.0,<0.10.0
+    - jupyverse-api >=0.10.0,<0.11.0
     - babel
     - json5
     - importlib_metadata >=4.4
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
-  summary: An FPS plugin for the JupyterLab/RetroLab API
+  summary: An FPS plugin for the JupyterLab/Notebook API
   keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
   license_file: COPYING.md
