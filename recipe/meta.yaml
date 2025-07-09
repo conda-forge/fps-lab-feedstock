@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.9.0,<0.10.0
+    - jupyverse-api >=0.10.0,<0.11.0
     - babel
     - json5
     - importlib_metadata >=4.4
@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
-  summary: An FPS plugin for the JupyterLab/RetroLab API
+  summary: An FPS plugin for the JupyterLab/Notebook API
   keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
   license_file: COPYING.md
