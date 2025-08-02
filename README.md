@@ -7,7 +7,7 @@ Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
 
 Package license: BSD-3-Clause
 
-Summary: An FPS plugin for the JupyterLab/RetroLab API
+Summary: An FPS plugin for the JupyterLab/Notebook API
 
 Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/lab
 
