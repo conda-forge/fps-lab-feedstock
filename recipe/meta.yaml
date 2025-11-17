@@ -18,13 +18,12 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - hatchling
+    - uv-build
   run:
     - python >={{ python_min }}
     - jupyverse-api >=0.12.2,<0.13.0
     - babel
     - json5
-    - importlib-metadata >=4.4
 
 test:
   requires:
