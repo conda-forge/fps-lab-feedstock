@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.10.3"
+  version: "0.11.4"
 
 package:
   name: fps-lab
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-lab/fps_lab-${{ version }}.tar.gz
-    sha256: aea5e607e8df556d1ec73fbaa379c60dbcefb4c95cb89582b432c959c7fb340f
+    sha256: aee11c8aef9a117212968b7b32111f0b900425d9820eb083316325bcc9abbaff
 
 build:
   noarch: python
@@ -24,9 +24,17 @@ requirements:
     - uv-build
   run:
     - python >=${{ python_min }}
-    - jupyverse-api >=0.14.1,<0.15.0
-    - json5
+    - anyio
     - babel
+    - fastapi-core
+    - fps
+    - json5
+    - jupyverse-api >=0.15.0,<0.16.0
+    - jupyverse-auth >=0.2.0,<0.3.0
+    - jupyverse-frontend >=0.1.0,<0.2.0
+    - jupyverse-jupyterlab >=0.1.0,<0.2.0
+    - jupyverse-lab >=0.3.0,<0.4.0
+    - starlette
 
 tests:
   - python:
