@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.6"
+  version: "0.11.7"
 
 package:
   name: fps-lab
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-lab/fps_lab-${{ version }}.tar.gz
-    sha256: 68fd48facdfcc83e287085ade61e982bd8ba4d6b1dead16f987f57cfbf87c9cd
+    sha256: d12764118c686ed9c4f5c34844e92acf6dcf26aaae133588151fa4c0b2802933
 
 build:
   noarch: python
